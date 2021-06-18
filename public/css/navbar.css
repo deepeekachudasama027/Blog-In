@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Yatra One");
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar-links {
+  height: 100%;
+  float: right;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+.navbar-links li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: peachpuff;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar-links :hover {
+  color: #f77062;
+  transition: all 0.3s ease;
+}
+
+
+

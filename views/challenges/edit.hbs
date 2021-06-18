@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>BlogIN</title>
+  <link rel="icon" href="../image/template/blog_in.png" type="image/png" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Blinker:400,800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+    body {
+      font-family: Blinker, Serif;
+      letter-spacing: 0.1rem;
+      overflow-x: hidden;
+      background-image: url(../image/template/jess-bailey-5xjw079i6Q4-unsplash.jpg);
+      background-size: cover;
+
+    }
+
+    .navbar {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-family: Blinker, serif;
+      color: black;
+    }
+
+    .navbar-links {
+      height: 100%;
+      float: initial;
+    }
+
+    .navbar-links ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 1rem;
+      color: black;
+      font-style: bold;
+    }
+
+    .navbar-links li {
+      list-style: none;
+      margin-right: 2rem;
+      color: black;
+    }
+
+    .navbar-links li a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      padding: 0.3rem;
+      font-size: 1.4rem;
+      letter-spacing: 0.1;
+      font-style: bold;
+    }
+
+    .navbar-links :hover {
+      color: darkgoldenrod !important;
+      transition: all 0.3s ease;
+    }
+
+
+
+
+    .event-page {
+      margin-bottom: 1.5rem;
+      font-size: 2.5vw;
+      color: blackf;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      font-family: "Montserrat", sans-serif;
+      padding-top: 1rem;
+    }
+
+
+    .container {
+
+      background-color: white;
+      border-radius: 10px;
+      border-radius: 0px 30px 0px 30px;
+      border-bottom: 7px solid darkslategray;
+      border-right: 7px solid darkslategray;
+      width: 1130px;
+      margin: 50px;
+      height: 620px;
+      margin-top: 2.5rem;
+    }
+
+
+    #title {
+      margin-top: 10px;
+      width: 90%;
+      padding: 20px;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid darkslategray;
+      margin-left: 30px;
+    }
+
+    #content {
+      width: 90%;
+      height: 300px;
+      margin-top: 15px;
+      padding: 20px;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid darkslategray;
+      margin-left: 30px;
+    }
+
+
+    .btn {
+      background-color: darkgoldenrod;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      border-radius: 12px;
+      transform: translateY(4px);
+      padding: 16px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+     <div>
+      <a href="/" class="navbar-brand animated flip"><img src="../image/template/logo.png" alt=""></a>
+
+    </div>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/add">Create New Blog</a></li>
+        <li><a href="/view">View other's Blogs</a></li>
+        <li><a href="/mine">My Blogs</a></li>
+        <li><a href="/contact">Contact </a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+
+    <center>
+      <form class="container c2" method="POST" action="/edit/edit_post">
+        <input type="hidden" name="id" value={{id}}>
+        <h1 class="event-page">Edit your Blog</h1>
+        <textarea name="title" id="title" placeholder="title" required>{{title}}</textarea>
+
+        <textarea name="content" id="content" placeholder="Description" required>{{content}}</textarea>
+        <br> Do u want to publish it
+        <select name="publish" id="publish">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+        <div>
+
+          <input type="Submit" value="Submit" class="btn" />
+
+      </form>
+    </center>
+    <div id='status' class='invisible'>{{errormessage }}</div>
+
+  </div>
+
+
+</body>
+
+</html>

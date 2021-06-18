@@ -1,0 +1,27 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "mysql2": "^2.2.5",
+    "path": "^0.12.7",
+    "sweetalert2": "^11.0.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

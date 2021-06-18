@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Blinker:400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: Blinker, Serif;
+  letter-spacing: 0.1rem;
+  overflow-x: hidden;
+  background-image: url(../image/template/jess-bailey-5xjw079i6Q4-unsplash.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: Blinker, serif;
+  color: black;
+}
+
+.navbar-links {
+  height: 100%;
+  float: initial;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  color: black;
+  font-style: bold;
+}
+
+.navbar-links li {
+  list-style: none;
+  margin-right: 2rem;
+  color: black;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1;
+  font-style: bold;
+}
+
+.navbar-links :hover {
+  color: darkgoldenrod !important;
+  transition: all 0.3s ease;
+}
+
+.event-page {
+  margin-bottom: 1.5rem;
+  font-size: 2.5vw;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 1rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  border-radius: 0px 30px 0px 30px;
+  border-bottom: 7px solid darkslategray;
+  border-right: 7px solid darkslategray;
+  width: 1130px;
+  margin: 50px;
+  height: 500px;
+  margin-top: 10rem;
+  margin-left: 35%;
+}
+
+#title {
+  margin-top: 10px;
+  width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid darkslategray;
+  margin-left: 30px;
+}
+#content {
+  width: 90%;
+  height: 300px;
+  margin-top: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid darkslategray;
+  margin-left: 30px;
+}
+
+.btn {
+  background-color: darkgoldenrod;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  transform: translateY(4px);
+  padding: 16px;
+  margin-top: 20px;
+}

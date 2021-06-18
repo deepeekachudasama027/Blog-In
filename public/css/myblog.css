@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Blinker:400,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: Blinker, sans-serif;
+  letter-spacing: 0.1rem;
+  overflow-x: hidden;
+  background-image: url(../image/template/jess-bailey-5xjw079i6Q4-unsplash.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: Blinker, sans-serif;
+  color: black;
+}
+
+.navbar-links {
+  height: 100%;
+  float: initial;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.navbar-links li {
+  list-style: none;
+  margin-right: 2rem;
+  color: black;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1;
+}
+
+.navbar-links :hover {
+  color: darkgoldenrod !important;
+  transition: all 0.3s ease;
+}
+
+.event-page {
+  margin-bottom: 2rem;
+  font-size: 3vw;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 1rem;
+}
+
+.container {
+  width: 1150px;
+  background-color: white;
+  height: 150px;
+  border-radius: 10px;
+  padding-bottom: 100px;
+  border-radius: 0px 30px 0px 30px;
+  border-bottom: 7px solid darkslategray;
+  border-right: 7px solid darkslategray;
+  margin-bottom: 20px;
+  margin-left: 20%;
+}
+
+.title {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: left;
+  margin-left: 20px;
+
+  overflow-wrap: break-word;
+}
+
+.btn {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  padding: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btn3 {
+  background-color: darkgoldenrod;
+  float: left;
+  margin-left: 20px;
+}
+.btn4 {
+  background-color: white;
+  color: gray;
+  margin-left: 38%;
+}
+.btn5 {
+  background-color: gray;
+  float: right;
+  margin-right: 20px;
+}
+.btn6 {
+  background-color: darkgoldenrod;
+  float: left;
+  margin-left: 45%;
+}
+
+.btn:hover {
+  color: black;
+}

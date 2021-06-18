@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>BlogIN</title>
+  <link rel="icon" href="../image/template/blog_in.png" type="image/png" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/register_style.css" />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <form class="container" method="POST" action="register_auth">
+      <h1 class="event-page">Registration</h1>
+      <input type="text" name="username" placeholder="User Name" autocomplete="off" id="title" required />
+      <input type="email" name="email" placeholder="Email ID" autocomplete="off" id="title" required>
+      <input type="Password" name="password" placeholder="Password" autocomplete="off" minlength="5" id="title"
+        required />
+      <center>
+        <input type="Submit" name="register" value="Register" class="btn" />
+        <p style="color: black; padding-top:20px"> Login here : <a href="/login"
+            style="color: darkslategray; font-weight:bold;;">Login</a></p>
+      </center>
+
+    </form>
+    <div id='status' class='invisible'>{{errormessage }}</div>
+
+  </div>
+
+  <script>
+
+
+    if ($('div#status').text() != '') {
+      var msg = $('div#status').text()
+      if (msg == "User Successfully Registered") {
+        swal.fire({
+          icon: "success",
+          title: "Message",
+          text: msg
+        });
+
+      }
+      else if (msg == 'Enter valid Entries' || msg == 'User already Exists ') {
+        swal.fire({
+          icon: "warning",
+          title: "Message",
+          text: msg
+        });
+
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>
