@@ -94,23 +94,23 @@ router.get("/", (req, res) => {
   if (req.session.loggedIn) {
     res.render("layout/main", { errormessage: msg });
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.get("/add", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     res.render("challenges/add");
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.post("/add_new_post", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     var title = req.body.title;
     var content = req.body.content;
@@ -144,13 +144,13 @@ router.post("/add_new_post", (req, res) => {
       }
     );
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.get("/mine", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     db.query(
       "select title,post_id from posts join users on posts.user_id = users.id where email = ? order by updated_at desc ",
@@ -165,13 +165,13 @@ router.get("/mine", (req, res) => {
       }
     );
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.get("/view", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     db.query(
       "select title,post_id from posts join users on posts.user_id = users.id where email <> ? and published = 1 order by updated_at desc ",
@@ -186,13 +186,13 @@ router.get("/view", (req, res) => {
       }
     );
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.get("/find/:post_id", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     db.query(
       "select * from posts join users on posts.user_id=users.id where post_id = ? ",
@@ -213,13 +213,13 @@ router.get("/find/:post_id", (req, res) => {
       }
     );
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.get("/edit/:post_id", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     db.query(
       "select * from posts join users on posts.user_id=users.id where email=? and post_id = ? ",
@@ -238,13 +238,13 @@ router.get("/edit/:post_id", (req, res) => {
       }
     );
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.get("/delete/:post_id", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     db.query(
       "delete from posts where post_id = ? ",
@@ -259,13 +259,13 @@ router.get("/delete/:post_id", (req, res) => {
       }
     );
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.post("/edit/edit_post", (req, res) => {
-  msg = "";
+  msg = '';
   var title = req.body.title;
   var content = req.body.content;
   var id = req.body.id;
@@ -301,17 +301,17 @@ router.post("/edit/edit_post", (req, res) => {
       }
     );
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });
 
 router.get("/contact", (req, res) => {
-  msg = "";
+  msg = '';
   if (req.session.loggedIn) {
     res.render("challenges/contact");
   } else {
-    msg = "You have to login first";
+    msg = '';
     res.redirect("login");
   }
 });

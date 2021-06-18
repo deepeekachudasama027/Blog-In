@@ -49,7 +49,7 @@ app.use(router);
 
 
 app.listen(process.env.PORT, () => {
-  console.log("Welcome to BlogPost website.....");
+  console.log("Welcome to BlogIN.....");
 });
 
 
