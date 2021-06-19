@@ -22,28 +22,28 @@ Material -- for ppt (describing project UI, ER diagram )
 
 Follow the steps to Install the project 
 
-<!-- Clone the project in your pc by using the command : -->
+`Clone the project in your pc by using the command :`
 **git clone https://github.com/deepeekachudasama027/Blog-In.git**
 
 **Delete package.json file and package lock json file**
 
-<!-- Run the command given below to install node-modules needed -->
+`Run the command given below to install node-modules needed`
 **npm i express express-session express-handlebars cors dotenv hbs mysql2 path sweetalert2 nodemon**
-<!-- 
-then to get package.json file in your project run:  -->
+ 
+`then to get package.json file in your project run:`
 **npm init **
 
-<!-- in package.json file add the command given below in "scripts" key -->
+`in package.json file add the command given below in "scripts" key`
 **"start": "nodemon server.js"**
 
-<!-- server.js is the main js file to run the project  -->
+`server.js is the main js file to run the project`
 
-<!-- installation completed -->
+`installation completed`
 
-<!-- To run the project, run the command : -->
+`To run the project, run the command :`
 **npm start**
 
-<!-- in browser search for  -->
+`in browser search for`
 **localhost:3000**
 
 
