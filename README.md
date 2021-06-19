@@ -8,7 +8,7 @@
 
 `Backend : Node.js and Express.js framework `
 
-`Frontend : HTML, CSS, js, Handlebars (template)``
+`Frontend : HTML, CSS, js, Handlebars (template)`
 
 
 ## Project Structure:
