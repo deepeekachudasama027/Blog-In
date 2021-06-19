@@ -59,6 +59,6 @@ Follow the steps to Install the project
 
 **localhost:3000**
 
-
+`You can change the port in configure.env file`
 
 
