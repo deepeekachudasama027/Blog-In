@@ -1,15 +1,15 @@
-#Welcome to Blog-In
+# Welcome to Blog-In
 
 **It is a Database Management Project where user can create and share Blogs** 
 
-##Tech stack used :
+## Tech stack used :
 
 **DBMS : MySql
 Backend : Node.js and Express.js framework 
 Frontend : HTML, CSS, js, Handlebars (template) **
 
 
-##Project Structure:
+## Project Structure:
 
 Controller folder -- Database configuration 
 Model folder -- Tables creation 
@@ -18,7 +18,7 @@ Router -- Routes
 views -- all handlebars files (frontend)
 Material -- for ppt (describing project UI, ER diagram )
 
-How to Install
+## How to Install
 
 Follow the steps to Install the project 
 
