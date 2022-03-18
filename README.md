@@ -53,7 +53,7 @@ Follow the steps to Install the project
 
 `To run the project, run the command :`
 
-**npm start**
+**nodemon start**
 
 `in browser search for`
 
